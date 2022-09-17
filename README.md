@@ -7,5 +7,11 @@ This repo creates an environment for me to test various IaC and CI/CD workflows 
   - APP: Simple containerize flask app with APM and logs enabled
   - Orchestration: Kubernetes cluster already configured with vagrant nodes on top of KVM hypervisor
   - Bash script to install vagrant and KVM included
-  - Vagrant script files included to create Kubernetes nodes using vagrant([Take a look my gist](https://gist.github.com/Behzadb/dc3a69635b1b18e3bcaf6ac18bac18b4))
+  - Vagrant script files included to create Kubernetes nodes using vagrant([Take a look at my gist](https://gist.github.com/Behzadb/dc3a69635b1b18e3bcaf6ac18bac18b4))
   - Kubernetes Cluster provisioned using [kubespray](https://github.com/kubernetes-sigs/kubespray) ansible-playbook 
+
+## requirements
+  - python 3.8
+  - Git
+  - Internet access
+  - A host with minumum 32GB Ram
