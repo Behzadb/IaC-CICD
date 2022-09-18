@@ -1,0 +1,21 @@
+image: python:bullseye
+
+stages:          
+  - build
+  - deploy
+
+build-job:       
+  stage: build
+  script:
+    - echo "Compiling the code..."
+    - mkdir /app
+    - cp -r flask-app ./app
+    - pip install -r ./app/requirements.txt
+    - echo "Compile complete."
+
+deploy-job:     
+  stage: deploy  
+  environment: production
+  script:
+    - echo "Deploying application..."
+    - echo "Application successfully deployed."
